@@ -63,8 +63,10 @@ object PasswordHash {
     skf.generateSecret(spec).getEncoded()
   }
 
-  private def toHex(bytes: Array[Byte]) = bytes.map("%02X" format _).mkString
+  private def toHex(bytes: Array[Byte]): String = 
+    bytes.map("%02X" format _).mkString
 
-  private def fromHex(hex: String): Array[Byte] = hex.sliding(2, 2).toArray.map(Integer.parseInt(_, 16).toByte)
+  private def fromHex(hex: String): Array[Byte] = 
+    hex.sliding(2, 2).toArray.map(Integer.parseInt(_, 16).toByte)
 
 }
