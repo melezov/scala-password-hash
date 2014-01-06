@@ -15,3 +15,7 @@ I have attempted to implement the as true to the original, but be as idiomatical
 The original Java code is BSD Licensed Copyright (c) 2013, Taylor Hornby.  The full original code is available in` /sr/test/java/passwordhash/PasswordHash.java`.  The original license is available in the source code and in `LICENSE-ORIGINAL.txt`.
 
 This port is available under the BSD license.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/dholbrook/scala-password-hash/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
