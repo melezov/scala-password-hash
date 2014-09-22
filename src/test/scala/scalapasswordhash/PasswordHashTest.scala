@@ -14,12 +14,12 @@ class PasswordHashTest extends FunSuite with GeneratorDrivenPropertyChecks  {
       assert(PasswordHash.validatePassword(password, h1))
     }
   }
-  
+
   test("hash generated from Scala should validate with Java") {
     forAll (identifier) { (password: String) =>
       val h1 = PasswordHash.createHash(password)
       assert(JPasswordHash.validatePassword(password, h1))
     }
-  }  
-    
+  }
+
 }
